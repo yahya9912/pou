@@ -41,7 +41,8 @@ function create() {
 	add(play);
 
     android = new FlxSprite().loadGraphic(Paths.image('buttons/android'));
-    android.y = 600;
+    android.y = 591;
+    android.x = 505;
     add(android);
 
     sudoku = new FlxSprite().loadGraphic(Paths.image('sudoku'));
