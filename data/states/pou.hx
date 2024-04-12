@@ -2,9 +2,9 @@ import flixel.addons.display.FlxBackdrop;
 import funkin.backend.utils.DiscordUtil;
 import funkin.menus.ModSwitchMenu;
 import lime.app.Application;
-import flixel.text.FlxText;
 import flixel.util.FlxAxes;
 import lime.graphics.Image;
+import flixel.text.FlxText;
 import openfl.Lib;
 
 function create() {
@@ -44,6 +44,11 @@ function create() {
     android.y = 591;
     android.x = 505;
     add(android);
+
+    apple = new FlxSprite().loadGraphic(Paths.image('buttons/apple'));
+    apple.y = 591;
+    apple.x = 646;
+    add(apple);
 
     sudoku = new FlxSprite().loadGraphic(Paths.image('sudoku'));
     add(sudoku);
