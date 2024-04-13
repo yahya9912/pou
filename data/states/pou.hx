@@ -62,6 +62,15 @@ function update(elapsed:Float) {
 		openSubState(new ModSwitchMenu());
 	}
 
+    if (FlxG.mouse.overlaps(android)) {
+        android.scale.set(1.2, 1.2);
+        if (FlxG.mouse.justReleased) 
+            CoolUtil.openURL("https://play.google.com/store/apps/details?id=me.pou.app");       
+    }
+    else {
+		android.scale.set(1,1);
+	}
+
 
 }
 
