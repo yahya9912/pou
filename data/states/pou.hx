@@ -63,12 +63,21 @@ function update(elapsed:Float) {
 	}
 
     if (FlxG.mouse.overlaps(android)) {
-        android.scale.set(1.2, 1.2);
+        android.scale.set(1.1, 1.1);
         if (FlxG.mouse.justReleased) 
             CoolUtil.openURL("https://play.google.com/store/apps/details?id=me.pou.app");       
     }
     else {
 		android.scale.set(1,1);
+	}
+
+    if (FlxG.mouse.overlaps(apple)) {
+        apple.scale.set(1.1, 1.1);
+        if (FlxG.mouse.justReleased) 
+            CoolUtil.openURL("https://apps.apple.com/us/app/pou/id575154654");       
+    }
+    else {
+		apple.scale.set(1,1);
 	}
 
 
