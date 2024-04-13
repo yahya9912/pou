@@ -51,12 +51,16 @@ function create() {
     add(apple);
 
     sudoku = new FlxSprite().loadGraphic(Paths.image('sudoku'));
+    sudoku.y = 600;
+    sudoku.x = 20;
     add(sudoku);
 
 
 }
 
 function update(elapsed:Float) {
+    sudoku.angle -=1;
+
 	if (controls.SWITCHMOD) {
 		persistentUpdate = false;
 		openSubState(new ModSwitchMenu());
